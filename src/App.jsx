@@ -1,13 +1,23 @@
-import './App.css'
+import Square from "./Components/Square/Square";
 
-function App() {
- 
-
+export default function Board() {
   return (
     <>
-      <h1 className='text-center text-3xl text-red-500'>Welcome here react with TailwindCss </h1>
+      <div className="flex">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="flex">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="flex">
+        <Square />
+        <Square />
+        <Square />
+      </div>
     </>
-  )
+  );
 }
-
-export default App
